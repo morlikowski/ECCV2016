@@ -1,4 +1,4 @@
-# Caffe
+# Caffe for "Generating Visual Explanations"
 
 Caffe is a deep learning framework made with expression, speed, and modularity in mind.
 It is developed by the Berkeley Vision and Learning Center ([BVLC](http://bvlc.eecs.berkeley.edu)) and community contributors.
@@ -18,6 +18,14 @@ Please join the [caffe-users group](https://groups.google.com/forum/#!forum/caff
 Framework development discussions and thorough bug reports are collected on [Issues](https://github.com/BVLC/caffe/issues).
 
 Happy brewing!
+
+## Code changes
+
+There was an error with an undefined function ´SampleLayer<Dtype>::Forward_gpu´. To circumvent the error, I've declared that function (with an empty body), as I am not running the model on a GPU for now. The error was ([reported](https://github.com/LisaAnne/ECCV2016/issues/2)) on the original repo.
+
+## Installing on Ubuntu 16.04
+
+The included Makefile, Makefile.config.ubuntu.16.04 and CMakeLists.txt have been configured for an installation on Ubuntu 16.04 (without GPU) as described in [this installation guide](https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide).
 
 ## License and Citation
 
