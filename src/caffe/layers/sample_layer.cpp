@@ -55,6 +55,12 @@ void SampleLayer<Dtype>::Forward_cpu(const vector<Blob<Dtype>*>& bottom,
   }
 }
 
+template <typename Dtype>
+void SampleLayer<Dtype>::Forward_gpu(const vector<Blob<Dtype>*>& bottom,
+    const vector<Blob<Dtype>*>& top) {
+	//Does nothing, declared to prevent compilation error on non-GPU installation
+}
+
 INSTANTIATE_CLASS(SampleLayer);
 REGISTER_LAYER_CLASS(Sample);
 
