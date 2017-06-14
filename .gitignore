@@ -69,6 +69,7 @@ models/*
 *lmdb
 examples/**/data
 examples/ECCV2016/cider_scores/
+examples/ECCV2016/utils/init.py
 
 # build, distribute, and bins (+ python proto bindings)
 build
