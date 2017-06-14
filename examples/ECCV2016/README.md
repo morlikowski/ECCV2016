@@ -21,6 +21,8 @@ Hendricks, L.A., Akata, Z., Rohrbach, M., Donahue, J., Schiele, B. and Darrell, 
 ## Building the models
 
 All the models are generated using NetSpec.  Please build them by running "build_nets.sh".  "build_nets.sh" will also generate bash scripts you can use to train models.
+In order to be able to run the script, you first need to copy `utils/init.example.py` to `utils/init.py`. Then download
+the (COCO Caption Evaluation script)[https://github.com/tylin/coco-caption] and assign its path to the in the init.py script.
 
 ## Training the models
 
